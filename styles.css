@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--PaleBlue);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container__card {
+  height: 80%;
+  width: 30%;
+  background-color: var(--VeryPaleBlue);
+  border-radius: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__card--image {
+  height: 45%;
+  width: 100%;
+  background-image: url("./images/illustration-hero.svg");
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.container__body--tittle {
+  color: var(--DarkBlue);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.container__body--text {
+  color: var(--DesaturatedBlue);
+  font-size: 15px;
+}
+
+.container__Music {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: #F8F9FE;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+.container__Music--icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("./images/icon-music.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container__Music--text {
+  text-align: start;
+}
+
+.container__Music--url {
+  color: var(--BrightBlue);
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.container__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 33px 33px 33px;
+}
+
+.container__body--buttonProced {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: var(--BrightBlue);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container__body--buttonCancel {
+  text-decoration: none;
+  color: var(--DesaturatedBlue);
+  font-weight: bold;
+}
+
+.container__Music--text > h3 {
+  color: var(--DarkBlue);
+  font-weight: 900;
+}
+
+.container__Music--text > span {
+  color: var(--DesaturatedBlue);
+}
+
+.container__body--buttonCancel:hover {
+  color: var(--DarkBlue);
+}
+
+.container__body--buttonProced:hover {
+  background-color: #766cf1;
+}
+
+.container__Music--url:hover {
+  color: #938cda;
+}
+
+@media (max-width: 1150px) {
+    .container__card {
+        width: 35%;    
+    }
+}
+
+@media (max-width: 996px) {
+    .container__card {
+        width: 40%;    
+    }
+}
+
+@media (max-width: 856px) {
+    .container__card {
+        width: 50%;    
+    }
+}
+
+@media (max-width: 686px) {
+    .container__card {
+        width: 60%;    
+    }
+}
+
+@media (max-width: 573px) {
+    .container__card {
+        width: 80%;    
+    }   
+    .container__Music--text > h3 {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 431px) {
+    .container__card {
+        width: 90%;    
+    }   
+
+}
